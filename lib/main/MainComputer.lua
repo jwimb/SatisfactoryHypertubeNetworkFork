@@ -11,7 +11,7 @@ function run(size, debug, aux_screen)
     --- Main function to run the loop.
     ---
     local NetworkCard = computer.getPCIDevices(findClass("NetworkCard"))[1]
-
+    print(component.findComponent("Panel")[1])
     local panel = component.proxy(component.findComponent("Panel")[1])
     local reset_button = panel:getModule(0,0)
     local update_software = panel:getModule(9,9)

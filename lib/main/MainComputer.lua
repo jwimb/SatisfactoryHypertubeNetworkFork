@@ -17,6 +17,7 @@ function run(size, debug, aux_screen)
     local update_software = panel:getModule(9,9)
 
     local hyper_network = AdjacencyMatrix(size, debug)
+    print(hyper_network)
     local hyper_network_vertex_name = {}
     local hyper_network_name_vertex = {}
     local hyper_network_dest_vertices = {}
